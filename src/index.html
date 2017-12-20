@@ -2,13 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Ng5</title>
+  <title>>WKW Photography</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/home">WW Photography</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Engagements<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/Engagements/coleSam">Cole & Sam</a></li>
+                    <li><a href="/Engagements/alexSarah">Alex & Sarah</a></li>
+                    <li><a href="/Engagements/kindraJordan">Kindra & Jordan</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weddings<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/Weddings/coleSam">Cole & Sam</a></li>
+                    <li><a href="/Weddings/alexSarah">Alex & Sarah</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Families<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/Families/Dawes">Dawes</a></li>
+                    <li><a href="/Families/Burkholders">Burkholders</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Senior Photos<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/SeniorPhotos/Weston">Weston</a></li>
+                    <li><a href="/SeniorPhotos/Jenny">Jenny</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/Travel/The-West">The West</a></li>
+                    <li><a href="/Travel/The-Midwest">The Midwest</a></li>
+                    <li><a href="/Travel/Europe">Europe</a></li>
+                    <li><a href="/Travel/Africa">Africa</a></li>
+                    <li><a href="/Travel/Australia">Australia</a></li>
+                    <li><a href="/Travel/National-Parks">National Parks</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Book Me!<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/BookMe/Pricing">Pricing</a></li>
+                    <li><a href="/BookMe/Book-Now">Book Now</a></li>
+                    <li><a href="/BookMe/Contact">Contact Info</a></li>
+                  </ul>
+              </li>
+              <li ng-class="{active: isActive('bookMe')}"> <a href="/About-Me">About Me</a></li>
+
+
+
+            <!--  <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li> -->
+
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+    <!-- <center><img src="/assets/wwkphotography_logo.jpg" alt="WWKPhotography" style="width:175;height:175px;"></center> -->
+    <app-root></app-root>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,25 +2,78 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 
-body{
-  background:#2E9CE6;
-  padding: 3em;
-  font-family: 'Raleway', 'Arial';
-  color: #fff;
+/* navbar */
+.navbar-default {
+    background-color: #dfccff;
+    border-color: #E7E7E7;
 }
-ul{
-  list-style-type:none;
-  margin: 0 0 2em 0;
-  padding:0;
+
+/* Title */
+.navbar-default .navbar-brand {
+    color: #000000;
 }
-ul li{
-  display:incline;
-  margin-right: 30px;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
 }
-ul li a{
-  font-size: 1.5em;
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
 }
-a {
-  color: #fff;
-  text-decoration:none;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #333;
+    }
+}
+
+.carousel-inner > .item > img {
+  width:655px;
+  height:605px;
 }
